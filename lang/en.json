@@ -1,0 +1,22 @@
+{
+    "changesWillApplyNextTime": "Changes will be applied next time you run the app",
+
+    "ok": "OK",
+    "done": "Done",
+    "chooseGame": "Choose game",
+    "mafia": "Mafia",
+    "spy": "Spy",
+    "players": "Players",
+    "howManyPlayersPlayThisRole": "How many player splay this role?",
+    "count": "Count",
+    "selectTheRoles_holdToSeeDescription": "Select the roles. To see role description, hold your finger on it",
+    "continue": "Continue",
+    "back": "Back",
+    "selectRoles": "Choose roles",
+    "startGame": "Start game",
+    "clickHereToReturn": "Click here to return",
+    "viewRoles": "View roles",
+    "orderedBySelection": "Ordered by selection",
+    "titles": "Titles",
+    "truthOrDare": "Truth or dare"
+}

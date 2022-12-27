@@ -1,0 +1,46 @@
+{
+    "citizensGroup": "Citizens",
+    "police": "Police",
+    "doctor": "Doctor",
+    "inspector": "Inspector",
+    "priest": "Priest",
+    "invulnerable": "Invulnerable",
+    "gun": "Gun",
+    "sniper": "Sniper",
+    "angel": "Angel",
+    "martyr": "Martyr",
+    "bodyguard": "Bodyguard",
+    "mayor": "Mayor",
+    "virgin": "Virgin",
+    "freemason": "Freemason",
+    "sherif": "Sherif",
+    "hacker": "Hacker",
+    "baker": "Baker",
+
+    "mafiaGroup": "Mafia",
+    "mafia": "Mafia",
+    "godFather": "Godfather",
+    "natasha": "Natasha",
+    "lawyer": "Lawyer",
+    "terrorist": "Terrorist",
+    "strongMan": "Strong man",
+    "offender": "Offender",
+    "witch": "Witch",
+    "harlot": "Harlot",
+    "interrogator": "Interrogator",
+    "poisonMaker": "Poison maker",
+    "traitor": "Traitor",
+
+    "grayGroup": "Other",
+    "serialKiller": "Serial killer",
+    "bartender": "Bartender",
+    "bard": "Bard",
+    "jester": "Jester",
+    "thief": "Thief",
+    "police_info": "Is one of the game polices who does not know anyone and has to help other polices to kick out the mafia with their own precise",
+
+
+
+    "mafiasCannotOutNumberCitizens": "Mafias cannot out number other players all to gether!",
+    "thereAreStrayRoles": "Some roles are still not selected"
+}

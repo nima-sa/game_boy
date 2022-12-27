@@ -1,0 +1,22 @@
+{
+    "changesWillApplyNextTime": "تغییرات دفعه‌ی بعدی که برنامه را اجرا می‌کنید اعمال خواهند شد",
+
+    "ok": "خب",
+    "done": "تمام",
+    "chooseGame": "بازی انتخاب کنین",
+    "mafia": "مافیا",
+    "spy": "جاسوس",
+    "players": "تعداد بازیکن",
+    "howManyPlayersPlayThisRole": "چند نفر این نقش را بازی می‌کنند؟",
+    "count": "تعداد",
+    "selectTheRoles_holdToSeeDescription": "نقش‌ها را انتخاب کنید. برای دیدن توضیحات انگشتتان را روی آن نگه دارید",
+    "continue": "ادامه",
+    "back": "یازگشت",
+    "selectRoles": "نقش‌ها را انتخاب کنید",
+    "startGame": "شروع بازی",
+    "clickHereToReturn": "برای بازگشت، اینجا را کلیک کنید",
+    "viewRoles": "مشاهده‌ی نقش‌ها",
+    "orderedBySelection": "به ترتیب انتخاب",
+    "titles": "عناوین",
+    "truthOrDare": "جرات حقیقت"
+}

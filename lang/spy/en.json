@@ -1,0 +1,21 @@
+{
+    "categorySelection": "Category selection",
+
+    "passToFirstPlayer": "Pass the phone to first player",
+    "passToNextPlayer": "Pass the phone to next player",
+    "pressShowRoleWhenYouWereReady": "Click 'show subject' when you were ready",
+    "showSubject": "Show subject",
+
+    "youAreSpy": "You are spy",
+
+    "cat_easy": "Easy",
+    "cat_countries": "Countries",
+    "cat_artAndCulture": "Art and culture",
+    "cat_travel": "Travel",
+    "cat_outdoor": "Outdoor",
+    "cat_leisure": "Leisure",
+    "cat_sport": "Sport",
+    "cat_historicalEra": "Historical era",
+    "cat_hardcoreMix": "Hardcore mix",
+    "cat_all": "All"
+}

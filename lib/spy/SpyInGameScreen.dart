@@ -78,7 +78,7 @@ class _SpyInGameScreenState extends State<SpyInGameScreen> {
               child: AnimatedOpacity(
                 opacity: 1,
                 duration: Duration(seconds: 2),
-                child: FlatButton(
+                child: TextButton(
                   child: NSText(
                     NSLocalizer.numsToLng(
                         '${NSLocalizer.translate('clickHereToReturn')}\n' +

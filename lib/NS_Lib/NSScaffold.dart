@@ -114,13 +114,13 @@ class NSScaffold extends StatelessWidget {
           dismissTitle: null,
         );
       } else {
-        Scaffold.of(context).showSnackBar(SnackBar(
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           content: content,
           duration: duration,
         ));
       }
     } catch (err) {
-      Scaffold.of(context).showSnackBar(SnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: content,
         backgroundColor: androidBackgroundColor,
         duration: duration,

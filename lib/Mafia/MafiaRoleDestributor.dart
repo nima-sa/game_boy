@@ -122,17 +122,20 @@ class _MafiaRoleDestributorState extends State<MafiaRoleDestributor> {
 
                       return Padding(
                         padding: EdgeInsets.all(4.0),
-                        child: RaisedButton(
-                          textColor:
-                              MediaQuery.of(context).platformBrightness ==
-                                      Brightness.light
-                                  ? Colors.black
-                                  : Colors.white,
-                          color: MediaQuery.of(context).platformBrightness ==
-                                  Brightness.light
-                              ? Colors.grey[300]
-                              : Colors.grey[700],
-                          disabledColor: Colors.blue[900],
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            foregroundColor:
+                                MediaQuery.of(context).platformBrightness ==
+                                        Brightness.light
+                                    ? Colors.black
+                                    : Colors.white,
+                            backgroundColor:
+                                MediaQuery.of(context).platformBrightness ==
+                                        Brightness.light
+                                    ? Colors.grey[300]
+                                    : Colors.grey[700],
+                            disabledBackgroundColor: Colors.blue[900],
+                          ),
                           child: Center(
                             child: child,
                           ),
@@ -175,16 +178,19 @@ class _MafiaRoleDestributorState extends State<MafiaRoleDestributor> {
   List<Widget> _createBottons() {
     List<Widget> buttons = [
       Expanded(
-        child: RaisedButton(
-          textColor:
-              MediaQuery.of(context).platformBrightness == Brightness.light
-                  ? Colors.black
-                  : Colors.white,
-          color: MediaQuery.of(context).platformBrightness == Brightness.light
-              ? Colors.grey[300]
-              : Colors.grey[700],
-          padding: EdgeInsets.fromLTRB(
-              8, 8, 8, MediaQuery.of(context).padding.bottom + 8),
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            foregroundColor:
+                MediaQuery.of(context).platformBrightness == Brightness.light
+                    ? Colors.black
+                    : Colors.white,
+            backgroundColor:
+                MediaQuery.of(context).platformBrightness == Brightness.light
+                    ? Colors.grey[300]
+                    : Colors.grey[700],
+            padding: EdgeInsets.fromLTRB(
+                8, 8, 8, MediaQuery.of(context).padding.bottom + 8),
+          ),
           child: NSText(NSLocalizer.translate('startGame')),
           onPressed: () {
             if (roles.length != visitedIndexes.length) {
@@ -211,16 +217,19 @@ class _MafiaRoleDestributorState extends State<MafiaRoleDestributor> {
       buttons.insert(
         0,
         Expanded(
-          child: RaisedButton(
-            textColor:
-                MediaQuery.of(context).platformBrightness == Brightness.light
-                    ? Colors.black
-                    : Colors.white,
-            color: MediaQuery.of(context).platformBrightness == Brightness.light
-                ? Colors.grey[300]
-                : Colors.grey[700],
-            padding: EdgeInsets.fromLTRB(
-                8, 8, 8, MediaQuery.of(context).padding.bottom + 8),
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              foregroundColor:
+                  MediaQuery.of(context).platformBrightness == Brightness.light
+                      ? Colors.black
+                      : Colors.white,
+              backgroundColor:
+                  MediaQuery.of(context).platformBrightness == Brightness.light
+                      ? Colors.grey[300]
+                      : Colors.grey[700],
+              padding: EdgeInsets.fromLTRB(
+                  8, 8, 8, MediaQuery.of(context).padding.bottom + 8),
+            ),
             child: NSText(NSLocalizer.translate('viewRoles')),
             onPressed: () {},
             onLongPress: () {

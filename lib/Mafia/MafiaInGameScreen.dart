@@ -55,7 +55,7 @@ class _MafiaInGameScreenState extends State<MafiaInGameScreen> {
               child: AnimatedOpacity(
                 opacity: opacity,
                 duration: Duration(seconds: 2),
-                child: FlatButton(
+                child: TextButton(
                   child: NSText(
                     NSLocalizer.translate('clickHereToReturn'),
                     color: Colors.white,

@@ -137,11 +137,12 @@ class NSRaisedButton extends StatelessWidget {
     //   onPressed: onPressed,
     // );
 
-    Widget android = RaisedButton(
-      color: _color,
-      splashColor: androidSplashColor,
+    Widget android = ElevatedButton(
+      style: ElevatedButton.styleFrom(
+          backgroundColor: _color,
+          padding: padding,
+          surfaceTintColor: androidSplashColor),
       child: body,
-      padding: padding,
       onPressed: this.onPressed,
       onLongPress: this.onLongPress,
     );

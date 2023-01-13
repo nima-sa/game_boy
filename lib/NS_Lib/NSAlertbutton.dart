@@ -22,7 +22,7 @@ class NSAlertButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    StatelessWidget ios = CupertinoDialogAction(
+    Widget ios = CupertinoDialogAction(
       child: Padding(
         padding: const EdgeInsets.all(0.0),
         child: child,
@@ -35,7 +35,7 @@ class NSAlertButton extends StatelessWidget {
       },
     );
 
-    StatelessWidget android = FlatButton(
+    Widget android = TextButton(
       child: child,
       onPressed: () {
         Navigator.pop(context);

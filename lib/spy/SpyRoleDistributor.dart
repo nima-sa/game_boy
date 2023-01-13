@@ -212,9 +212,11 @@ class _SpyRoleDistributerState extends State<SpyRoleDistributer>
                       Expanded(
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: FlatButton(
-                            padding: EdgeInsets.all(8),
-                            color: Colors.blue,
+                          child: TextButton(
+                            style: TextButton.styleFrom(
+                              padding: EdgeInsets.all(8),
+                              backgroundColor: Colors.blue,
+                            ),
                             child: NSText(
                               NSLocalizer.translate('viewSpy', sub: 'spy'),
                               color: Colors.white,
@@ -274,18 +276,21 @@ class _SpyRoleDistributerState extends State<SpyRoleDistributer>
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Expanded(
-                      child: RaisedButton(
-                          textColor:
-                              MediaQuery.of(context).platformBrightness ==
-                                      Brightness.light
-                                  ? Colors.white
-                                  : Colors.white,
-                          color: MediaQuery.of(context).platformBrightness ==
-                                  Brightness.light
-                              ? Colors.blueGrey
-                              : Colors.blueGrey,
-                          padding: EdgeInsets.fromLTRB(8, 8, 8,
-                              MediaQuery.of(context).padding.bottom + 8),
+                      child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            foregroundColor:
+                                MediaQuery.of(context).platformBrightness ==
+                                        Brightness.light
+                                    ? Colors.white
+                                    : Colors.white,
+                            backgroundColor:
+                                MediaQuery.of(context).platformBrightness ==
+                                        Brightness.light
+                                    ? Colors.blueGrey
+                                    : Colors.blueGrey,
+                            padding: EdgeInsets.fromLTRB(8, 8, 8,
+                                MediaQuery.of(context).padding.bottom + 8),
+                          ),
                           child: NSText(
                             buttonText,
                             size: 20,

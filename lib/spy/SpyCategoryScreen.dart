@@ -66,17 +66,21 @@ class _SpyCategoryScreenState extends State<SpyCategoryScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Expanded(
-                      child: RaisedButton(
-                        textColor: MediaQuery.of(context).platformBrightness ==
-                                Brightness.light
-                            ? Colors.black
-                            : Colors.white,
-                        color: MediaQuery.of(context).platformBrightness ==
-                                Brightness.light
-                            ? Colors.grey[300]
-                            : Colors.grey[700],
-                        padding: EdgeInsets.fromLTRB(
-                            8, 8, 8, MediaQuery.of(context).padding.bottom + 8),
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          foregroundColor:
+                              MediaQuery.of(context).platformBrightness ==
+                                      Brightness.light
+                                  ? Colors.black
+                                  : Colors.white,
+                          backgroundColor:
+                              MediaQuery.of(context).platformBrightness ==
+                                      Brightness.light
+                                  ? Colors.grey[300]
+                                  : Colors.grey[700],
+                          padding: EdgeInsets.fromLTRB(8, 8, 8,
+                              MediaQuery.of(context).padding.bottom + 8),
+                        ),
                         child: Directionality(
                             textDirection: NSLocalizer.textDirection,
                             child: NSText(NSLocalizer.translate('continue'))),
@@ -150,16 +154,19 @@ class _SpyCategoryScreenState extends State<SpyCategoryScreen> {
                 child: Container(
                   // height: 45,
                   // width: 45,
-                  child: RaisedButton(
-                    padding: EdgeInsets.zero,
-                    color: MediaQuery.of(context).platformBrightness ==
-                            Brightness.light
-                        ? (selectedPlayersCount - 1 == idx
-                            ? selectionColor
-                            : Colors.blueGrey[500])
-                        : (selectedPlayersCount - 1 == idx
-                            ? selectionColor
-                            : Colors.blueGrey[500]),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      padding: EdgeInsets.zero,
+                      backgroundColor:
+                          MediaQuery.of(context).platformBrightness ==
+                                  Brightness.light
+                              ? (selectedPlayersCount - 1 == idx
+                                  ? selectionColor
+                                  : Colors.blueGrey[500])
+                              : (selectedPlayersCount - 1 == idx
+                                  ? selectionColor
+                                  : Colors.blueGrey[500]),
+                    ),
                     child: SizedBox(
                       width: 120,
                       child: NSText(
@@ -259,18 +266,20 @@ class _SpyCategoryScreenState extends State<SpyCategoryScreen> {
         Padding(
           padding: EdgeInsets.fromLTRB(4, 4, 4, 4),
           child: Container(
-            child: RaisedButton(
-              padding: EdgeInsets.zero,
-              color:
-                  MediaQuery.of(context).platformBrightness == Brightness.light
-                      ? (selectedCategoriesIdxs.contains(idx)
-                          // selectedCategoryIdx == idx
-                          ? selectionColor
-                          : Colors.blueGrey[500])
-                      : (selectedCategoriesIdxs.contains(idx)
-                          // selectedCategoryIdx == idx
-                          ? selectionColor
-                          : Colors.blueGrey[500]),
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.zero,
+                backgroundColor: MediaQuery.of(context).platformBrightness ==
+                        Brightness.light
+                    ? (selectedCategoriesIdxs.contains(idx)
+                        // selectedCategoryIdx == idx
+                        ? selectionColor
+                        : Colors.blueGrey[500])
+                    : (selectedCategoriesIdxs.contains(idx)
+                        // selectedCategoryIdx == idx
+                        ? selectionColor
+                        : Colors.blueGrey[500]),
+              ),
               child: SizedBox(
                 width: 120,
                 child: NSText.inverted(dict[categories[idx]],

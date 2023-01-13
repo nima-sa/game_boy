@@ -46,15 +46,17 @@ class NSButton extends StatelessWidget {
       borderRadius: borderRadius,
       onPressed: onPressed,
     );
-    Widget android = FlatButton(
-      shape: RoundedRectangleBorder(
-          borderRadius: borderRadius,
-          side: BorderSide(color: Colors.white, width: 0)),
+    Widget android = TextButton(
+      style: TextButton.styleFrom(
+        padding: androidPadding ?? padding,
+        backgroundColor: _color,
+        shape: RoundedRectangleBorder(
+            borderRadius: borderRadius,
+            side: BorderSide(color: Colors.white, width: 0)),
+      ),
       child: body,
       onPressed: onPressed,
       onLongPress: onLongPress,
-      padding: androidPadding ?? padding,
-      color: _color,
     );
 
     return NSReturnFromRender(context,

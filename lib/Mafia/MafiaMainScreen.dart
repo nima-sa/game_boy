@@ -77,23 +77,27 @@ class _MafiaMainScreenState extends State<MafiaMainScreen> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: <Widget>[
                                 Expanded(
-                                  child: RaisedButton(
-                                    textColor: MediaQuery.of(context)
-                                                .platformBrightness ==
-                                            Brightness.light
-                                        ? Colors.black
-                                        : Colors.white,
-                                    color: MediaQuery.of(context)
-                                                .platformBrightness ==
-                                            Brightness.light
-                                        ? Colors.grey[300]
-                                        : Colors.grey[700],
-                                    padding: EdgeInsets.fromLTRB(
-                                        8,
-                                        8,
-                                        8,
-                                        MediaQuery.of(context).padding.bottom +
-                                            8),
+                                  child: ElevatedButton(
+                                    style: ElevatedButton.styleFrom(
+                                      foregroundColor: MediaQuery.of(context)
+                                                  .platformBrightness ==
+                                              Brightness.light
+                                          ? Colors.black
+                                          : Colors.white,
+                                      backgroundColor: MediaQuery.of(context)
+                                                  .platformBrightness ==
+                                              Brightness.light
+                                          ? Colors.grey[300]
+                                          : Colors.grey[700],
+                                      padding: EdgeInsets.fromLTRB(
+                                          8,
+                                          8,
+                                          8,
+                                          MediaQuery.of(context)
+                                                  .padding
+                                                  .bottom +
+                                              8),
+                                    ),
                                     child: Directionality(
                                       textDirection: NSLocalizer.textDirection,
                                       child: NSText(
@@ -172,16 +176,19 @@ class _MafiaMainScreenState extends State<MafiaMainScreen> {
               child: Container(
                 // height: 50,
                 // width: 50,
-                child: RaisedButton(
-                  padding: EdgeInsets.zero,
-                  color: MediaQuery.of(context).platformBrightness ==
-                          Brightness.light
-                      ? (selectedPlayersCount - 1 == idx
-                          ? Colors.blue
-                          : Colors.blueGrey[500])
-                      : (selectedPlayersCount - 1 == idx
-                          ? Colors.blue
-                          : Colors.blueGrey[500]),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                    backgroundColor:
+                        MediaQuery.of(context).platformBrightness ==
+                                Brightness.light
+                            ? (selectedPlayersCount - 1 == idx
+                                ? Colors.blue
+                                : Colors.blueGrey[500])
+                            : (selectedPlayersCount - 1 == idx
+                                ? Colors.blue
+                                : Colors.blueGrey[500]),
+                  ),
                   child: NSText.inverted('${idx + playersOfset + 1}',
                       color: selectedPlayersCount - 1 == idx
                           ? Colors.white
@@ -289,13 +296,15 @@ class _MafiaMainScreenState extends State<MafiaMainScreen> {
           // color: Colors.red,
           child: Padding(
             padding: EdgeInsets.fromLTRB(3, 3, 3, 3),
-            child: FlatButton(
-              color: role.isSelected
-                  ? color
-                  : MediaQuery.of(context).platformBrightness ==
-                          Brightness.light
-                      ? Colors.blueGrey[400]
-                      : Colors.grey[800],
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: role.isSelected
+                    ? color
+                    : MediaQuery.of(context).platformBrightness ==
+                            Brightness.light
+                        ? Colors.blueGrey[400]
+                        : Colors.grey[800],
+              ),
               child: Directionality(
                 textDirection: NSLocalizer.textDirection,
                 child: SizedBox(
@@ -349,10 +358,18 @@ class _MafiaMainScreenState extends State<MafiaMainScreen> {
           List.generate(_roleDistinguisher.keys.length, (i) => 0);
 
     for (var role in _roleDistinguisher.keys.toList()) {
-      final color = MediaQuery.of(context).platformBrightness ==
-              Brightness.light
-          ? (i == 0 ? Colors.lightBlue : i == 1 ? Colors.red : Colors.green)
-          : (i == 0 ? Colors.lightBlue : i == 1 ? Colors.red : Colors.green);
+      final color =
+          MediaQuery.of(context).platformBrightness == Brightness.light
+              ? (i == 0
+                  ? Colors.lightBlue
+                  : i == 1
+                      ? Colors.red
+                      : Colors.green)
+              : (i == 0
+                  ? Colors.lightBlue
+                  : i == 1
+                      ? Colors.red
+                      : Colors.green);
       final int roleGroupCount =
           _roleDistinguisher[role].map((e) => e.count).reduce((a, b) => a + b);
       // allPlayesCount += roleGroupCount;

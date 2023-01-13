@@ -4,7 +4,7 @@ import 'package:game_boy/NS_Lib/NSCaptiveText.dart';
 import 'package:game_boy/NS_Lib/NSLocalizer.dart';
 import 'package:game_boy/NS_Lib/NSScaffold.dart';
 
-import 'package:home_indicator/home_indicator.dart';
+// import 'package:home_indicator/home_indicator.dart';
 
 import '../handies.dart';
 import '../main.dart';
@@ -32,13 +32,13 @@ class _SpyInGameScreenState extends State<SpyInGameScreen> {
       Future.delayed(Duration(seconds: 4))
           .then((_) => mounted ? setState(() => opacity = 0) : () {});
     handleTimer();
-    HomeIndicator.hide();
+    // HomeIndicator.hide();
   }
 
   @override
   void dispose() {
     super.dispose();
-    HomeIndicator.show();
+    // HomeIndicator.show();
   }
 
   void handleTimer() {

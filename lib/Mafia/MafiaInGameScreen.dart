@@ -5,7 +5,7 @@ import 'package:game_boy/NS_Lib/NSLocalizer.dart';
 import 'package:game_boy/NS_Lib/NSScaffold.dart';
 import 'package:game_boy/main.dart';
 
-import 'package:home_indicator/home_indicator.dart';
+// import 'package:home_indicator/home_indicator.dart';
 
 import 'MafiaRole.dart';
 
@@ -30,13 +30,13 @@ class _MafiaInGameScreenState extends State<MafiaInGameScreen> {
       Future.delayed(Duration(seconds: 4))
           .then((value) => setState(() => opacity = 0));
 
-    HomeIndicator.hide();
+    // HomeIndicator.hide();
   }
 
   @override
   void dispose() {
     super.dispose();
-    HomeIndicator.show();
+    // HomeIndicator.show();
   }
 
   @override
